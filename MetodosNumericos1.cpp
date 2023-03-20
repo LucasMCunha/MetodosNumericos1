@@ -8,18 +8,6 @@
 
 using namespace std;
 
-/*
-auto splitter(vector<string> base, string S) { 
-  istringstream iss = (istringstream)S;
-  string s;
-  while ( getline( iss, s, ' ' ) ) {
-    base.push_back(s.c_str());
-     // cout << "\n"<< s.c_str();
-  }
-  return base;
-}
-*/
-
 string floatToRawIntBits(float F){
   union
   {
@@ -45,9 +33,6 @@ for(int i = 0; i <bit.length(); i++){
 }
 
 int main(int argc, char **argv) {
-vector<string> base;
-//string s = argv[1];
-//base = splitter(base,s);
 float val1 = stof(argv[1]);
 float val2 = stof(argv[3]);
 string raw1 = floatToRawIntBits(val1);
